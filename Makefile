@@ -15,7 +15,7 @@ run-circleci-local:
 	circleci local execute
    
 lint:
-	hadolint ./Dockerfile
-	pylint --disable=R,C,W1203,W1202 app.py
+	hadolint ./Dockerfile --ignore DL3013 --ignore DL3042
+	pylint --disable=R,C app.py
 
 all: install lint test

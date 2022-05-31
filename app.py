@@ -1,5 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
 import click
+
 
 @click.command()
 def hello():
